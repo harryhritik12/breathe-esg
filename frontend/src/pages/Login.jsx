@@ -10,10 +10,10 @@ export default function Login({ onLogin }) {
   e.preventDefault();
   try {
     // first get CSRF cookie
-    await axios.get('http://127.0.0.1:8000/api/auth/csrf/', { withCredentials: true });
+    await axios.get('https://breathe-esg-ekvc.onrender.com/api/auth/csrf/', { withCredentials: true });
     
     await axios.post(
-      'http://127.0.0.1:8000/api/auth/login/',
+      'https://breathe-esg-ekvc.onrender.com/api/auth/login/',
       { username, password },
       { withCredentials: true }
     );

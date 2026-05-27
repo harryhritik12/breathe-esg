@@ -8,7 +8,7 @@ export default function Review() {
 
   const fetchRows = useCallback(() => {
     setLoading(true);
-    axios.get(`http://127.0.0.1:8000/api/analyst/rows/?status=${filter}`, { withCredentials: true })
+    axios.get(`https://breathe-esg-ekvc.onrender.com/api/analyst/rows/?status=${filter}`, { withCredentials: true })
       .then(res => {
         setRows(res.data);
         setLoading(false);

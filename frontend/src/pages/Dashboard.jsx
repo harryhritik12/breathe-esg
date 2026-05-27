@@ -8,8 +8,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     Promise.all([
-      axios.get('http://127.0.0.1:8000/api/analyst/stats/', { withCredentials: true }),
-      axios.get('http://127.0.0.1:8000/api/analyst/batches/', { withCredentials: true })
+      axios.get('https://breathe-esg-ekvc.onrender.com/api/analyst/stats/', { withCredentials: true }),
+      axios.get('https://breathe-esg-ekvc.onrender.com/api/analyst/batches/', { withCredentials: true })
     ]).then(([statsRes, batchesRes]) => {
       setStats(statsRes.data);
       setBatches(batchesRes.data);

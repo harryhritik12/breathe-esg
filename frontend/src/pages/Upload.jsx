@@ -28,7 +28,7 @@ export default function Upload() {
 
     try {
       const res = await axios.post(
-        `http://127.0.0.1:8000/api/ingest/upload/${sourceType}/`,
+        `https://breathe-esg-ekvc.onrender.com/api/ingest/upload/${sourceType}/`,
         formData,
         { withCredentials: true, headers: { 'Content-Type': 'multipart/form-data' } }
       );
