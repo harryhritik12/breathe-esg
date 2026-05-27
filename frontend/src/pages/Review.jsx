@@ -18,7 +18,7 @@ export default function Review() {
   useEffect(() => { fetchRows(); }, [fetchRows]);
 
   const action = async (id, type) => {
-    await axios.post(`http://127.0.0.1:8000/api/analyst/rows/${id}/${type}/`, {}, { withCredentials: true });
+    await axios.post(`"https://breathe-esg-ekvc.onrender.com/api/analyst/rows/${id}/${type}/`, {}, { withCredentials: true });
     fetchRows();
   };
 
