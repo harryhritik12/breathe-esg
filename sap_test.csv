@@ -1,0 +1,4 @@
+posting_date,material_type,quantity,unit,plant_code,vendor
+2024-01-15,diesel,500,L,PLANT_IN01,vendor_001
+2024-01-20,natural_gas,1200,m3,PLANT_IN02,vendor_002
+2024-02-10,diesel,750,L,PLANT_IN01,vendor_003
